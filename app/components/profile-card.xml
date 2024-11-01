@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://schemas.nativescript.org/tns.xsd" class="bg-white rounded-lg shadow-sm p-4 m-2">
+    <Image src="{{ imageUrl }}" class="h-32 w-32 rounded-full mx-auto" />
+    <Label text="{{ name }}" class="text-xl font-bold text-center mt-2" />
+    <Label text="{{ isSitter ? 'Pet Sitter' : 'Pet Owner' }}" class="text-gray-500 text-center" />
+    <StackLayout orientation="horizontal" class="justify-center mt-2">
+        <Label text="{{ rating }}" class="text-yellow-500 font-bold" />
+        <Label text=" ★ " class="text-yellow-500" />
+        <Label text="{{ reviews }} reviews" class="text-gray-500" />
+    </StackLayout>
+    <Label text="{{ bio }}" class="text-gray-600 mt-2 text-center" textWrap="true" />
+</StackLayout>

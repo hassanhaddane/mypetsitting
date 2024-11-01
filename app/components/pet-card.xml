@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://schemas.nativescript.org/tns.xsd" class="bg-white rounded-lg shadow-sm p-4 m-2">
+    <Image src="{{ imageUrl }}" class="h-40 w-40 rounded-lg mx-auto" />
+    <Label text="{{ name }}" class="text-xl font-bold text-center mt-2" />
+    <Label text="{{ breed }}" class="text-gray-500 text-center" />
+    <Label text="{{ age }} years old" class="text-gray-500 text-center" />
+    <Label text="{{ description }}" class="text-gray-600 mt-2" textWrap="true" />
+    <Label text="Special Needs:" class="font-bold mt-2" visibility="{{ specialNeeds ? 'visible' : 'collapsed' }}" />
+    <Label text="{{ specialNeeds }}" class="text-gray-600" textWrap="true" visibility="{{ specialNeeds ? 'visible' : 'collapsed' }}" />
+</StackLayout>

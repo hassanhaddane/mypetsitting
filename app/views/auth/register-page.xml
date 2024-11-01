@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo" class="bg-gray-100">
+    <ScrollView>
+        <StackLayout class="p-4">
+            <Label text="Create Account" class="text-3xl font-bold text-center mb-8" />
+            
+            <StackLayout class="form space-y-4">
+                <StackLayout class="form-group">
+                    <Label text="Name" class="text-sm font-medium text-gray-700" />
+                    <TextField text="{{ name }}" hint="Enter your full name"
+                             class="p-4 border border-gray-300 rounded-lg" />
+                </StackLayout>
+
+                <StackLayout class="form-group">
+                    <Label text="Email" class="text-sm font-medium text-gray-700" />
+                    <TextField text="{{ email }}" hint="Enter your email" keyboardType="email"
+                             class="p-4 border border-gray-300 rounded-lg" />
+                </StackLayout>
+
+                <StackLayout class="form-group">
+                    <Label text="Phone" class="text-sm font-medium text-gray-700" />
+                    <TextField text="{{ phone }}" hint="Enter your phone number" keyboardType="phone"
+                             class="p-4 border border-gray-300 rounded-lg" />
+                </StackLayout>
+
+                <StackLayout class="form-group">
+                    <Label text="Password" class="text-sm font-medium text-gray-700" />
+                    <TextField text="{{ password }}" hint="Enter your password" secure="true"
+                             class="p-4 border border-gray-300 rounded-lg" />
+                </StackLayout>
+
+                <StackLayout class="form-group">
+                    <Label text="Bio" class="text-sm font-medium text-gray-700" />
+                    <TextView text="{{ bio }}" hint="Tell us about yourself"
+                             class="p-4 border border-gray-300 rounded-lg" />
+                </StackLayout>
+
+                <StackLayout class="form-group">
+                    <Switch checked="{{ isSitter }}" class="mb-2" />
+                    <Label text="I want to be a pet sitter" class="text-sm font-medium text-gray-700" />
+                </StackLayout>
+
+                <Button text="Register" tap="{{ onRegister }}"
+                        class="bg-blue-500 text-white font-bold py-3 rounded-lg" />
+
+                <Button text="Back to Login" tap="{{ onLoginTap }}"
+                        class="bg-white text-blue-500 font-bold py-3 rounded-lg border border-blue-500" />
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>
